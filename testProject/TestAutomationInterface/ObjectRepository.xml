@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objectRepository>
+  <object>http://www.wikipedia.org</object>
+  <object>http://hu.wikipedia.org</object>
+  <object>http://en.wikipedia.org</object>
+</objectRepository>
