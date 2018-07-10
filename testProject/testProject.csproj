@@ -69,19 +69,19 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SpecflowTest\BrowserDefinition.cs" />
-    <Compile Include="SpecflowTest\BrowserFeature.feature.cs">
+    <Compile Include="WikipediaDefinition.cs" />
+    <Compile Include="WikipediaFeature.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>BrowserFeature.feature</DependentUpon>
+      <DependentUpon>WikipediaFeature.feature</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-    <None Include="SpecflowTest\BrowserFeature.feature">
+    <None Include="WikipediaFeature.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>BrowserFeature.feature.cs</LastGenOutput>
+      <LastGenOutput>WikipediaFeature.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>

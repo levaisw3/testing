@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace testProject.SpecflowTest
+namespace testProject
 {
     using TechTalk.SpecFlow;
     
@@ -18,20 +18,20 @@ namespace testProject.SpecflowTest
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.3.2.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("BrowserFeature")]
-    public partial class BrowserFeatureFeature
+    [NUnit.Framework.DescriptionAttribute("WikipediaFeature")]
+    public partial class WikipediaFeatureFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "BrowserFeature.feature"
+#line 1 "WikipediaFeature.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "BrowserFeature", null, ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "WikipediaFeature", null, ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -64,27 +64,28 @@ namespace testProject.SpecflowTest
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Test the Google search with the wikipedia keyword")]
-        public virtual void TestTheGoogleSearchWithTheWikipediaKeyword()
+        [NUnit.Framework.DescriptionAttribute("Validation in the chosen wikipedia page")]
+        public virtual void ValidationInTheChosenWikipediaPage()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Test the Google search with the wikipedia keyword", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Validation in the chosen wikipedia page", ((string[])(null)));
 #line 2
-this.ScenarioSetup(scenarioInfo);
+ this.ScenarioSetup(scenarioInfo);
 #line 3
- testRunner.Given("I go to the page \"www.google.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I open my webbrowser", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 4
- testRunner.And("I see the page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-            TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
-                        "Keyword"});
-            table1.AddRow(new string[] {
-                        "wikipedia"});
+ testRunner.And("I navigate to the wikipedia site: \"https://www.wikipedia.org/\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 5
- testRunner.When("I enter keyword in the search text box", ((string)(null)), table1, "When ");
+ testRunner.And("I choose the English language", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 6
+ testRunner.When("I search for \"Test Automation\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 7
+ testRunner.Then("\"Unit testing\" text exists in this page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 8
- testRunner.And("I click Search Button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("\"Test Automation Interface Model\" picture exists", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 9
- testRunner.Then("I see the search result", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.And("I search for the link of Behavior driven development", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 10
+ testRunner.And("I navigate to that page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
         }
